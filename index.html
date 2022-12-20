@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Pase</title>
+    <link href="./styles/style.css" rel="stylesheet"/>
+    <link href="./styles/fonts.css" rel="stylesheet"/>
+    <link href="./styles/media.css" rel="stylesheet"/>
+</head>
+<body>
+    <div id="up-page">
+        <header>
+            <div id="title">
+                <h1>Going</h1>
+                <h1 class="yellow-text">Bike</h1>
+            </div>
+            <ul>
+            <a href="#"><li>Início</li></a>
+            <a href="#"><li>Serviços</li></a>
+            <a href="#"><li>Sobre</li></a>
+            <a href="#"><li>Contato</li></a>
+            <a href="#" class="purple-box-btn"><li>Já tem uma conta?</li></a>
+            <script type="text/javascript">
+                const elem = document.getElementsByClassName("purple-box-btn")[0];
+                var lastid;
+
+                elem.addEventListener("mouseover", () =>{
+
+
+                    function changeText(){
+                        if(getComputedStyle(elem).backgroundColor == "rgb(255, 255, 0)")
+                        elem.firstChild.innerText = "Crie já!";
+
+                        elem.firstChild.style.width = "157.09px";
+                    }
+                    var id = setTimeout(changeText, 4300);
+                    lastid = id;
+
+                });
+
+                elem.addEventListener("mouseout", () =>{
+                        clearTimeout(lastid);
+                        elem.firstChild.innerText = "Já tem uma conta?";
+
+                        elem.firstChild.style.width = "157.09px";
+                });
+            </script>
+            </ul>
+        </header>
+
+        <main>
+            <aside>
+                <h2><span>Entregas Rápidas</span></h2>
+                <h2>com GoingBike</h2>
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                </p>
+                <article id="up-image">
+                    <img src="./components/images/77d0a7c454e658833800528e748edbe9.png" alt="purple-woman"/>
+                </article>
+                <form>
+                    <input type="submit" value="PEÇA UMA ENTREGA"/>
+                </form>
+            </aside>
+
+            <article>
+                <img src="./components/images/77d0a7c454e658833800528e748edbe9.png" alt="purple-woman"/>
+            </article>
+        </main>
+    </div>
+    <div id="down-page">
+        <h1>O que somos?</h1>
+        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+            The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+            The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+            The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
+    </div>
+</body>
+</html>
